@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Travel Bucket List</title>
   <style>
+    /* General Styles */
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-	  background-repeat: no-repeat;
       background: linear-gradient(to bottom right, rgb(102, 51, 153), rgb(0, 102, 204));
+      background-repeat: no-repeat;
       color: white;
     }
 
@@ -49,6 +51,7 @@
     .location-box img {
       width: 200px;
       height: 200px;
+      object-fit: cover;
       border-radius: 20%;
       transition: transform 0.3s ease;
     }
@@ -57,12 +60,14 @@
       transform: scale(1.05);
     }
 
-    h1 {
+    .location-box h1 {
       font-size: 1.5em;
+      margin-bottom: 10px;
     }
 
-    h3 {
+    .location-box h3 {
       font-weight: normal;
+      font-size: 1em;
     }
 
     footer {
@@ -71,76 +76,39 @@
       align-items: center;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 20px 40px;
+      flex-wrap: wrap;
     }
 
     footer h3 {
       margin: 0;
       font-size: 1em;
-	  text-align: center;
+      text-align: center;
+      flex: 1 1 auto;
     }
 
     footer img {
       width: 90px;
       height: 90px;
+      object-fit: cover;
       border-radius: 10%;
-       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     footer img:hover {
-     transform: scale(1.1);
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     }
-	@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.5em;
-    padding: 10px;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .location-box {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .location-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  footer img {
-    width: 70px;
-    height: 70px;
-  }
-
-  h1 {
-    font-size: 1.3em;
-  }
-
-  h3 {
-    font-size: 0.95em;
-  }
-}
+	 
 
   </style>
 </head>
 <body>
+
   <header>
     <h1>MY TRAVEL BUCKET LIST</h1>
   </header>
 
-  <div class="container">
+ <div class="container">
     <div class="location-box">
       <h1>CHENNAI</h1>
       <img src="Chennai.jpg" alt="Chennai" />
@@ -158,31 +126,29 @@
       <img src="OOTY.jpg" alt="Ooty" />
       <h3>Ooty, officially Udhagamandalam, is a renowned hill station in the Nilgiri district of Tamil Nadu, India. Nestled in the Nilgiri Hills, it's known for its scenic beauty, cool climate, and colonial charm.</h3>
     </div>
-  </div>
-
-  <div class="container">
-    <div class="location-box">
+	 <div class="location-box">
       <h1>KANYAKUMARI</h1>
-      <img src="images.jpg" alt="images" />
+      <img src="images.jpg" alt="Kanyakumari" />
       <h3>Kanyakumari, the southernmost tip of mainland India, is a popular tourist and pilgrimage destination known for its unique geographical features, religious significance, and stunning natural beauty. It's where the Arabian Sea, Bay of Bengal, and Indian Ocean converge, offering breathtaking views of the sun rising and setting over the sea.</h3>
     </div>
 
     <div class="location-box">
       <h1>MYSORE</h1>
-      <img src="mysore.jpg" alt="mysore" />
-      <h3>Mysore (also known as Mysuru), a city in Karnataka, India, is famed as the "Cultural Capital" and "City of Palaces". It was once the capital of the Kingdom of Mysore, ruled by the Wodeyar dynasty, and is known for its rich cultural heritage and historical landmarks</h3>
+      <img src="mysore.jpg" alt="Mysore" />
+      <h3>Mysore (also known as Mysuru), a city in Karnataka, India, is famed as the "Cultural Capital" and "City of Palaces". It was once the capital of the Kingdom of Mysore, ruled by the Wodeyar dynasty, and is known for its rich cultural heritage and historical landmarks.</h3>
     </div>
 
     <div class="location-box">
       <h1>KERALA</h1>
-      <img src="kerala.jpg" alt="KERALA" />
-      <h3>Kerala, also known as "God's Own Country," is a state in the southwestern part of India renowned for its natural beauty, rich culture, and diverse landscapes. It's a popular tourist destination, offering beaches, backwaters, hill stations, and Ayurvedic tourism</h3>
+      <img src="kerala.jpg" alt="Kerala" />
+      <h3>Kerala, also known as "God's Own Country," is a state in the southwestern part of India renowned for its natural beauty, rich culture, and diverse landscapes. It's a popular tourist destination, offering beaches, backwaters, hill stations, and Ayurvedic tourism.</h3>
     </div>
   </div>
 
   <footer>
     <h3>CREATED BY A. NATHANIEL ROHITH</h3>
-    <img src="1705161714153.jpg" alt="Ooty Footer Image" />
+    <img src="1705161714153.jpg" alt="Creator Image" />
   </footer>
+
 </body>
 </html>
